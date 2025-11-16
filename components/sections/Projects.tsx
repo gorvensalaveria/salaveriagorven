@@ -1,30 +1,34 @@
 // app/components/sections/Projects.tsx
 import Image from "next/image";
+import Link from "next/link";
 
 const projects = [
   {
     slug: "ecommerce-platform",
-    title: "WooCommerce E-Commerce Platform",
+    title: "E-commerce Platform (WooCommerce)",
     description:
-      "A responsive online store built with tailored product pages, dynamic course catalogues, and a streamlined checkout experience. Includes custom admin tools for updating content, processing orders, and managing learning materials efficiently.",
-    tags: ["WordPress", "React", "E-commerce"],
+      "Responsive online store with tailored product pages, cart, checkout, and easy admin updates.",
+    tags: ["WordPress", "WooCommerce", "E-commerce"],
     image: "/practicetestacademy.webp", // put file in /public/projects/
+    url: "https://www.practicetestsacademy.com/",
   },
   {
     slug: "learning-management-system",
     title: "Learning Management System (Moodle LMS)",
     description:
-      "A custom LMS developed using Moodle for the employees and clients of Khalifa Fund. The platform provides structured learning experiences that include company onboarding modules, code of conduct lessons, quizzes, and progress tracking. It delivers a secure and user-friendly environment with role-based dashboards and organized course navigation to support continuous training and evaluation.",
-    tags: ["Moodle", "LMS", "Elearning"],
+      "Custom LMS with lessons, quizzes, learner tracking, and employee training.",
+    tags: ["Moodle", "LMS", "E-learning"],
     image: "/khalifa.webp",
+    url: "https://learning.khalifafund.ae/",
   },
   {
     slug: "portfolio-website",
     title: "CRM & Case Management Platform (ASUN Migrations)",
     description:
-      "A modern, services website designed for ASUN Migrations, an Australian migration consultancy. The site highlights their services, success stories, and company information with a clean, trustworthy visual identity. Optimized for SEO and performance, it supports clear navigation for visa services and client inquiries.",
-    tags: ["Next.js", "Tailwind", "Frontend"],
+      "Custom CRM + Client Portal for migration agencies with client management, matters, workflows, documents, payments & compliance.",
+    tags: ["WordPress", "Custom CRM", "Case Management"],
     image: "/asunmigrations.webp",
+    url: "https://asunmigrations.com.au/",
   },
 ];
 
@@ -57,14 +61,20 @@ export default function Projects() {
               className="group rounded-2xl bg-slate-800/70 border border-white/10 overflow-hidden flex flex-col"
             >
               {/* Image */}
-              <div className="relative aspect-[4/3] bg-slate-700">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
+              <Link
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="relative aspect-[4/3] bg-slate-700">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+              </Link>
 
               {/* Content */}
               <div className="p-5 flex flex-col gap-3 flex-1">
@@ -85,9 +95,14 @@ export default function Projects() {
 
                 {/* Link */}
                 <div className="mt-4 pt-2">
-                  <button className="text-sm font-medium text-brand-blue hover:text-brand-blue/80">
+                  <Link
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium text-brand-blue hover:text-brand-blue/80"
+                  >
                     View project →
-                  </button>
+                  </Link>
                 </div>
               </div>
             </article>
