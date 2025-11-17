@@ -23,9 +23,9 @@ export default function Hero() {
           <div className="mt-6 flex gap-3">
             <a
               className="bg-blue-500 px-5 py-3 rounded text-white hover:bg-blue-600"
-              href="#projects"
+              href="https://www.dropbox.com/scl/fi/1hjyuwwblnc68b5tbgcla/Resume_Salaveria_Gorven_G.pdf?rlkey=i4z2yus7thezaneors768zj7i&st=50zq10e5&dl=0"
             >
-              Projects
+              View Resume
             </a>
             <a
               className="border border-white/40 px-5 py-3 rounded hover:bg-white/10"
