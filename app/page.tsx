@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/sections/Hero";
 import Skills from "@/components/sections/Skills";
-import Projects from "@/components/sections/Projects";
+import ClientsProject from "@/components/sections/ClientsProjects";
 import PersonalProject from "@/components/sections/PersonalProject";
 import Process from "@/components/sections/Process";
 import Testimonials from "@/components/sections/Testimonials";
@@ -13,7 +13,7 @@ export default function Page() {
       <Header />
       <Hero />
       <Skills />
-      <Projects />
+      <ClientsProject />
       <PersonalProject />
       <Process />
       <Testimonials />

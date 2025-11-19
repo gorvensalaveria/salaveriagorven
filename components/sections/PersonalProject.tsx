@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function PersonalProject() {
   return (
     <section
-      id="personal"
+      id="personal-project"
       className="bg-slate-950 text-white border-t border-white/5 scroll-mt-24"
     >
       <div className="mx-auto max-w-7xl px-4 md:px-6 py-16 md:py-24">

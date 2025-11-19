@@ -19,6 +19,9 @@ export default function Footer() {
 
           {/* Right: quick nav */}
           <nav className="flex flex-wrap gap-4 text-xs md:text-sm">
+            <a href="#hero" className="hover:text-white transition">
+              Hero
+            </a>
             <a href="#skills" className="hover:text-white transition">
               Skills
             </a>
