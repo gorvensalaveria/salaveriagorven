@@ -61,14 +61,14 @@ export default function Header() {
                   </a>
 
                   <a
-                    href="viber://chat?number=+639606101392"
+                    href="viber:
                     className={`${contactButtonBase} w-full bg-slate-800 text-sm text-slate-100 hover:bg-white hover:text-slate-900 border border-white/10`}
                   >
                     Viber: 0960&nbsp;610&nbsp;1392
                   </a>
 
                   <a
-                    href="https://wa.me/639606101392"
+                    href="https:
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`${contactButtonBase} w-full bg-slate-800 text-sm text-slate-100 hover:bg-white hover:text-slate-900 border border-white/10`}
