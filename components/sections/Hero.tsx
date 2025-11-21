@@ -33,7 +33,7 @@ export default function Hero() {
           <div className="mt-8 flex items-center gap-4">
             <a
               href="https://www.dropbox.com/scl/fi/1hjyuwwblnc68b5tbgcla/Resume_Salaveria_Gorven_G.pdf?rlkey=i4z2yus7thezaneors768zj7i&e=2&st=50zq10e5&dl=0"
-              className={`${contactButtonBase} bg-brand-blue text-white hover:bg-brand-blue/90`}
+              className={`${contactButtonBase} bg-brand-blue text-white hover:bg-brand-blue/90 hover:text-slate-400`}
             >
               View Resume
             </a>
