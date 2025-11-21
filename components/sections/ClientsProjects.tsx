@@ -4,29 +4,35 @@ import Link from "next/link";
 
 const projects = [
   {
-    slug: "ecommerce-platform",
-    title: "E-commerce Platform (WooCommerce)",
-    description:
-      "Responsive online store with tailored product pages, cart, checkout, and easy admin updates.",
-    tags: ["WordPress", "WooCommerce", "E-commerce"],
-    image: "/practicetestacademy.webp", // put file in /public/projects/
-    url: "https://www.practicetestsacademy.com/",
-  },
-  {
     slug: "learning-management-system",
     title: "Learning Management System (Moodle LMS)",
+    jobTitle: "Solutions Developer",
+    date: "November 23, 2023 - July 15, 2025",
     description:
       "Custom LMS with lessons, quizzes, learner tracking, and employee training.",
-    tags: ["Moodle", "LMS", "E-learning"],
+    tags: ["Moodle", "LMS", "E-learning", "PHP", "MySQL"],
     image: "/khalifa.webp",
     url: "https://learning.khalifafund.ae/",
   },
   {
+    slug: "ecommerce-platform",
+    title: "E-commerce Platform (WooCommerce)",
+    jobTitle: "Solutions Developer",
+    date: "January 01, 2025 - August 29, 2025",
+    description:
+      "Responsive online store with tailored product pages, cart, checkout, and easy admin updates.",
+    tags: ["WordPress", "WooCommerce", "E-commerce", "PHP", "MySQL"],
+    image: "/practicetestacademy.webp", // put file in /public/projects/
+    url: "https://www.practicetestsacademy.com/",
+  },
+  {
     slug: "portfolio-website",
     title: "CRM & Case Management Platform (ASUN Migrations)",
+    jobTitle: "Full-Stack WordPress Engineer – CRM Platform Development",
+    date: "August 29, 2025 - Present",
     description:
       "Custom CRM + Client Portal for migration agencies with client management, matters, workflows, documents, payments & compliance.",
-    tags: ["WordPress", "Custom CRM", "Case Management"],
+    tags: ["WordPress", "Custom CRM", "Case Management", "PHP", "MySQL"],
     image: "/asunmigrations.webp",
     url: "https://asunmigrations.com.au/",
   },
@@ -78,7 +84,9 @@ export default function Projects() {
 
               {/* Content */}
               <div className="p-5 flex flex-col gap-3 flex-1">
-                <h3 className="text-base font-semibold">{project.title}</h3>
+                <h1 className="text-base font-semibold">{project.title}</h1>
+                <h2 className="text-sm text-slate-300">{project.jobTitle}</h2>
+                <h4 className="text-sm text-slate-300">{project.date}</h4>
                 <p className="text-sm text-slate-300">{project.description}</p>
 
                 {/* Tags */}
@@ -94,12 +102,13 @@ export default function Projects() {
                 </div>
 
                 {/* Link */}
-                <div className="mt-4 pt-2">
+                {/* Link */}
+                <div className="mt-auto pt-4">
                   <Link
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-medium text-brand-blue hover:text-brand-blue/80"
+                    className="inline-block text-sm font-medium text-brand-blue hover:text-brand-blue/80"
                   >
                     View project →
                   </Link>

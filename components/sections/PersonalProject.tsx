@@ -55,10 +55,25 @@ export default function PersonalProject() {
                 </span>
               </div>
 
+              <div className="mt-4 flex flex-wrap gap-2 text-[11px] md:text-xs text-slate-200">
+                <span className="rounded-full bg-slate-900/70 border border-white/15 px-3 py-1">
+                  Python
+                </span>
+                <span className="rounded-full bg-slate-900/70 border border-white/15 px-3 py-1">
+                  PostgreSQL
+                </span>
+                <span className="rounded-full bg-slate-900/70 border border-white/15 px-3 py-1">
+                  Git
+                </span>
+                <span className="rounded-full bg-slate-900/70 border border-white/15 px-3 py-1">
+                  Express JS
+                </span>
+              </div>
+
               {/* CTA */}
               <div className="mt-5">
                 <Link
-                  href="#contact" // or replace with your real case study link
+                  href="#" // or replace with your real case study link
                   className="inline-flex items-center text-sm font-medium text-brand-blue hover:text-brand-blue/80"
                 >
                   View case study →
